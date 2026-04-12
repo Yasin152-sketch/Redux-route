@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<Mouse />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cartlist />} />
-          <Route path="*" element={<Pagenotfound />} />
+          <Route path="/*" element={<Pagenotfound />} />
         </Routes>
       </BrowserRouter>
     </>
