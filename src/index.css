@@ -331,10 +331,9 @@ ul li {
   right: 35px;
 }
 
-.cart-header h2{
+.cart-header h2 {
   position: relative;
   right: -35px;
-
 }
 /* Cart Items */
 .cart-item {
@@ -370,29 +369,180 @@ ul li {
   gap: 20px;
 }
 
-.footer h2{
+.footer h2 {
   position: relative;
   top: 13px;
 }
-.price{
+.price {
   color: green;
   position: relative;
   top: 15px;
   margin-right: 25px;
 }
 
-.btn-container{
-position: relative;
-left: 80px;
+.btn-container {
+  position: relative;
+  left: 80px;
 }
 
-.header2{
+.header2 {
   text-align: center;
   margin-top: 80px;
 }
 
-.home{
-  color:black;
+.home {
+  color: black;
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.header ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* 👇 Responsive */
+@media (max-width: 786px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 786px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+/* 
+.btn,
+.added {
+  text-align: center;
+  margin-right: 20px;
+} */
+
+.cart-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* 👇 Responsive */
+@media (max-width: 786px) {
+  .cart-container {
+    width: 95%;
+  }
+
+  .cart-item-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .item-actions input {
+    width: 100%;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+}
+
+.border {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.inner {
+  width: 50%;
+}
+
+/* 👇 Responsive */
+@media (max-width: 786px) {
+  .inner {
+    width: 90%;
+  }
+}
+
+.header2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.header2 img {
+  max-width: 100%;
+}
+
+/* 👇 Responsive */
+@media (max-width: 786px) {
+  .header2 h2 {
+    font-size: 18px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  padding: 6px;
+}
