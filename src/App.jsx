@@ -3,6 +3,7 @@ import "./index.css";
 import Mouse from "./Mouse";
 import Pagenotfound from "./Page404";
 import Products from "./Product";
+import Login from "./login";
 import { BrowserRouter, Routes, Route } from "react-router";
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Mouse />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cartlist />} />
           <Route path="/*" element={<Pagenotfound />} />
