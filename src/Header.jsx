@@ -8,13 +8,31 @@ function Header() {
         <h2>MyApp</h2>
         <ul>
           <li>
-            <Link to="/" className="link">Home</Link>
+            <Link to="/" className="link">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/products" className="link">products</Link>
+            <Link to="/products" className="link">
+              products
+            </Link>
           </li>
           <li>
-            <Link to="/cart" className="link">cart</Link>
+            <Link to="/cart" className="link">
+              cart
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/color" className="link">
+              Color
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/Login" className="link">
+              Login
+            </Link>
           </li>
           <Addtocart />
         </ul>

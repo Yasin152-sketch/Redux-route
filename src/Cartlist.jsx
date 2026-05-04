@@ -13,21 +13,6 @@ function Cartlist() {
   useEffect(() => {
     setcartitem(cartitem);
   }, [selector]);
-  // const manageqaulity = (id, q) => {
-  //   let quality = parseInt(q) > 1 ? parseInt(q) : 1;
-  //   const cartTempItems = selector.map((item) => {
-  //     console.log("called",id,q)
-  //     return item.id == id ? { ...item, quality } : item;
-  //   });
-  //   setcartitem(cartTempItems);
-  // };
-
-  // const handleQuantity = (id, value) => {
-  //   const quantity = Math.max(1, Number(value) || 1);
-
-  //   dispatch(updateQuantity({ id, quantity }));
-  // };
-
   const handleQuantity = (id, value) => {
     const quantity = Math.max(1, Number(value) || 1);
     dispatch(updateQuantity({ id, quantity }));
