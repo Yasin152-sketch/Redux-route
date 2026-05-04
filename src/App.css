@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,23 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+ */
+
+.login {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn{
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(170, 163, 163);
+}
+.btn:hover{
+  background-color:whitesmoke;
+  color: black;
 }
